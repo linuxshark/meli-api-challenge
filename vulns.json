@@ -1,1 +1,2939 @@
-{"result":{"CVE_Items":[{"configurations":{"CVE_data_version":"4.0","nodes":[{"children":[],"cpe_match":[{"cpe23Uri":"cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*","cpe_name":[],"versionEndExcluding":"5.16.3","vulnerable":true}],"operator":"OR"}]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-23002"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"In the Linux kernel before 5.16.3, drivers/bluetooth/hci_qca.c misinterprets the devm_gpiod_get_index_optional return value (expects it to be NULL in the error case, whereas it is actually an error pointer)."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-476"}]}]},"references":{"reference_data":[{"name":"https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.16.3","refsource":"MISC","tags":["Mailing List","Patch","Release Notes"],"url":"https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.16.3"},{"name":"https://github.com/torvalds/linux/commit/6845667146a28c09b5dfc401c1ad112374087944","refsource":"MISC","tags":["Patch"],"url":"https://github.com/torvalds/linux/commit/6845667146a28c09b5dfc401c1ad112374087944"}]}},"impact":{"baseMetricV3":{"cvssV3":{"attackComplexity":"LOW","attackVector":"LOCAL","availabilityImpact":"HIGH","baseScore":5.5,"baseSeverity":"MEDIUM","confidentialityImpact":"NONE","integrityImpact":"NONE","privilegesRequired":"LOW","scope":"UNCHANGED","userInteraction":"NONE","vectorString":"CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H","version":"3.1"},"exploitabilityScore":1.8,"impactScore":3.6}},"lastModifiedDate":"2023-03-13T15:02Z","publishedDate":"2023-03-01T20:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"audit@patchstack.com","ID":"CVE-2022-31474"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Directory Traversal vulnerability in iThemes BackupBuddy plugin 8.5.8.0 - 8.7.4.1 versions."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-22"}]}]},"references":{"reference_data":[{"name":"https://ithemes.com/blog/wordpress-vulnerability-report-special-edition-september-6-2022-backupbuddy/","refsource":"MISC","tags":[],"url":"https://ithemes.com/blog/wordpress-vulnerability-report-special-edition-september-6-2022-backupbuddy/"},{"name":"https://patchstack.com/database/vulnerability/backupbuddy/wordpress-backup-buddy-plugin-8-5-8-0-8-7-4-1-unauthenticated-path-traversal-arbitrary-file-download-vulnerability?_s_id=cve","refsource":"MISC","tags":[],"url":"https://patchstack.com/database/vulnerability/backupbuddy/wordpress-backup-buddy-plugin-8-5-8-0-8-7-4-1-unauthenticated-path-traversal-arbitrary-file-download-vulnerability?_s_id=cve"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"audit@patchstack.com","ID":"CVE-2022-38074"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"SQL Injection vulnerability in VeronaLabs WP Statistics plugin <= 13.2.10 versions."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-89"}]}]},"references":{"reference_data":[{"name":"https://patchstack.com/database/vulnerability/wp-statistics/wordpress-wp-statistics-plugin-13-2-10-multiple-authenticated-sql-injection-vulnerabilities?_s_id=cve","refsource":"MISC","tags":[],"url":"https://patchstack.com/database/vulnerability/wp-statistics/wordpress-wp-statistics-plugin-13-2-10-multiple-authenticated-sql-injection-vulnerabilities?_s_id=cve"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"trellixpsirt@trellix.com","ID":"CVE-2023-0978"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"A command injection vulnerability in Trellix Intelligent Sandbox CLI for version 5.2 and earlier, allows a local user to inject and execute arbitrary operating system commands using specially crafted strings. This vulnerability is due to insufficient validation of arguments that are passed to specific CLI command. The vulnerability allows the attack"}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://kcm.trellix.com/corporate/index?page=content&id=SB10397","refsource":"MISC","tags":[],"url":"https://kcm.trellix.com/corporate/index?page=content&id=SB10397"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"security@wordfence.com","ID":"CVE-2023-1372"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"The WH Testimonials plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several parameters such as wh_homepage, wh_text_short, wh_text_full and in versions up to, and including, 3.0.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-79"}]}]},"references":{"reference_data":[{"name":"https://www.wordfence.com/threat-intel/vulnerabilities/id/b6fe5f1a-787e-4662-915f-c6f04961e194","refsource":"MISC","tags":[],"url":"https://www.wordfence.com/threat-intel/vulnerabilities/id/b6fe5f1a-787e-4662-915f-c6f04961e194"},{"name":"https://danielkelley.me/wh-testimonials-reflected-xss-vulnerability-via-wh-homepage-parameter-in-version-3-0-0-and-below/","refsource":"MISC","tags":[],"url":"https://danielkelley.me/wh-testimonials-reflected-xss-vulnerability-via-wh-homepage-parameter-in-version-3-0-0-and-below/"},{"name":"https://plugins.trac.wordpress.org/browser/wh-testimonials/trunk/wh-testimonials.php#L177","refsource":"MISC","tags":[],"url":"https://plugins.trac.wordpress.org/browser/wh-testimonials/trunk/wh-testimonials.php#L177"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T13:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"security@wordfence.com","ID":"CVE-2023-1374"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"The Solidres plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'currency_name' parameter in versions up to, and including, 0.9.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers with administrator privileges to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-79"}]}]},"references":{"reference_data":[{"name":"https://www.wordfence.com/threat-intel/vulnerabilities/id/b13ee51b-9f23-428f-9cef-4a9b9b06b0c4","refsource":"MISC","tags":[],"url":"https://www.wordfence.com/threat-intel/vulnerabilities/id/b13ee51b-9f23-428f-9cef-4a9b9b06b0c4"},{"name":"https://plugins.trac.wordpress.org/browser/solidres/trunk/admin/currencies/edit.php#L15","refsource":"MISC","tags":[],"url":"https://plugins.trac.wordpress.org/browser/solidres/trunk/admin/currencies/edit.php#L15"},{"name":"https://danielkelley.me/solidres-hotel-booking-plugin-for-wordpress-post-based-xss-vulnerability-in-add-new-currency-feature/","refsource":"MISC","tags":[],"url":"https://danielkelley.me/solidres-hotel-booking-plugin-for-wordpress-post-based-xss-vulnerability-in-add-new-currency-feature/"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T13:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-24577"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"McAfee Total Protection prior to 16.0.50 allows attackers to elevate user privileges due to Improper Link Resolution via registry keys. This could enable a user with lower privileges to execute unauthorized tasks."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/product-security-bulletins.html","refsource":"MISC","tags":[],"url":"https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/product-security-bulletins.html"},{"name":"https://www.mcafee.com/support/?articleId=TS103397&page=shell&shell=article-view","refsource":"MISC","tags":[],"url":"https://www.mcafee.com/support/?articleId=TS103397&page=shell&shell=article-view"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T13:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-24578"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"McAfee Total Protection prior to 16.0.49 allows attackers to elevate user privileges due to DLL sideloading. This could enable a user with lower privileges to execute unauthorized tasks."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/product-security-bulletins.html","refsource":"MISC","tags":[],"url":"https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/product-security-bulletins.html"},{"name":"https://www.mcafee.com/support/?articleId=TS103397&page=shell&shell=article-view","refsource":"MISC","tags":[],"url":"https://www.mcafee.com/support/?articleId=TS103397&page=shell&shell=article-view"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T13:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-24579"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"McAfee Total Protection prior to 16.0.51 allows attackers to trick a victim into uninstalling the application via the command prompt."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/product-security-bulletins.html","refsource":"MISC","tags":[],"url":"https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/product-security-bulletins.html"},{"name":"https://www.mcafee.com/support/?articleId=TS103397&page=shell&shell=article-view","refsource":"MISC","tags":[],"url":"https://www.mcafee.com/support/?articleId=TS103397&page=shell&shell=article-view"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T13:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-24762"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"OS Command injection vulnerability in D-Link DIR-867 DIR_867_FW1.30B07 allows attackers to execute arbitrary commands via a crafted LocalIPAddress parameter for the SetVirtualServerSettings to HNAP1."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://www.dlink.com/en/security-bulletin/","refsource":"MISC","tags":[],"url":"https://www.dlink.com/en/security-bulletin/"},{"name":"https://hackmd.io/@uuXne2y3RjOdpWM87fw6_A/HyPK04zho","refsource":"MISC","tags":[],"url":"https://hackmd.io/@uuXne2y3RjOdpWM87fw6_A/HyPK04zho"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"audit@patchstack.com","ID":"CVE-2023-25991"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Cross-Site Request Forgery (CSRF) vulnerability in RegistrationMagic plugin <= 5.1.9.2 versions."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-352"}]}]},"references":{"reference_data":[{"name":"https://patchstack.com/database/vulnerability/custom-registration-form-builder-with-submission-manager/wordpress-registrationmagic-custom-registration-forms-user-registration-and-user-login-plugin-plugin-5-1-9-2-multiple-cross-site-request-forgery-csrf?_s_id=cve","refsource":"MISC","tags":[],"url":"https://patchstack.com/database/vulnerability/custom-registration-form-builder-with-submission-manager/wordpress-registrationmagic-custom-registration-forms-user-registration-and-user-login-plugin-plugin-5-1-9-2-multiple-cross-site-request-forgery-csrf?_s_id=cve"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-26073"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"An issue was discovered in Samsung Mobile Chipset and Baseband Modem Chipset for Exynos 850, Exynos 980, Exynos 1080, Exynos 1280, Exynos 2200, Exynos Modem 5123, Exynos Modem 5300, Exynos Auto T5123, and Exynos W920. A heap-based buffer overflow in the 5G MM message codec can occur due to insufficient parameter validation when decoding the extended emergency number list."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://semiconductor.samsung.com/support/quality-support/product-security-updates/","refsource":"MISC","tags":[],"url":"https://semiconductor.samsung.com/support/quality-support/product-security-updates/"},{"name":"https://semiconductor.samsung.com/processor/modem/","refsource":"MISC","tags":[],"url":"https://semiconductor.samsung.com/processor/modem/"},{"name":"https://semiconductor.samsung.com/processor/mobile-processor/","refsource":"MISC","tags":[],"url":"https://semiconductor.samsung.com/processor/mobile-processor/"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-26074"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"An issue was discovered in Samsung Mobile Chipset and Baseband Modem Chipset for Exynos 850, Exynos 980, Exynos 1080, Exynos 1280, Exynos 2200, Exynos Modem 5123, Exynos Modem 5300, Exynos Auto T5123, and Exynos W920. A heap-based buffer overflow in the 5G MM message codec can occur due to insufficient parameter validation when decoding operator-defined access category definitions."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://semiconductor.samsung.com/support/quality-support/product-security-updates/","refsource":"MISC","tags":[],"url":"https://semiconductor.samsung.com/support/quality-support/product-security-updates/"},{"name":"https://semiconductor.samsung.com/processor/modem/","refsource":"MISC","tags":[],"url":"https://semiconductor.samsung.com/processor/modem/"},{"name":"https://semiconductor.samsung.com/processor/mobile-processor/","refsource":"MISC","tags":[],"url":"https://semiconductor.samsung.com/processor/mobile-processor/"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T13:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-27061"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Tenda V15V1.0 V15.11.0.14(1521_3190_1058) was discovered to contain a buffer overflow vulnerability via the wifiFilterListRemark parameter in the modifyWifiFilterRules function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted request."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formWifiFilterRulesModify.md","refsource":"MISC","tags":[],"url":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formWifiFilterRulesModify.md"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-27062"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Tenda V15V1.0 was discovered to contain a buffer overflow vulnerability via the gotoUrl parameter in the formPortalAuth function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted request."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formPortalAuth.md","refsource":"MISC","tags":[],"url":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formPortalAuth.md"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-27063"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Tenda V15V1.0 V15.11.0.14(1521_3190_1058) was discovered to contain a buffer overflow vulnerability via the DNSDomainName parameter in the formModifyDnsForward function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted request."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formModifyDnsForward.md","refsource":"MISC","tags":[],"url":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formModifyDnsForward.md"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-27064"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Tenda V15V1.0 V15.11.0.14(1521_3190_1058) was discovered to contain a buffer overflow vulnerability via the index parameter in the formDelDnsForward function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted request."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formDelDnsForward.md","refsource":"MISC","tags":[],"url":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formDelDnsForward.md"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-27065"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Tenda V15V1.0 V15.11.0.14(1521_3190_1058) was discovered to contain a buffer overflow vulnerability via the picName parameter in the formDelWewifiPi function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted request."}]},"problemtype":{"problemtype_data":[{"description":[]}]},"references":{"reference_data":[{"name":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formDelWewifiPic.md","refsource":"MISC","tags":[],"url":"https://github.com/didi-zhiyuan/vuln/blob/main/iot/Tenda/W15EV1/formDelWewifiPic.md"}]}},"impact":{},"lastModifiedDate":"2023-03-13T14:48Z","publishedDate":"2023-03-13T14:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[{"children":[],"cpe_match":[{"cpe23Uri":"cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*","cpe_name":[],"versionEndExcluding":"5.16.3","vulnerable":true}],"operator":"OR"}]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@mitre.org","ID":"CVE-2023-23001"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"In the Linux kernel before 5.16.3, drivers/scsi/ufs/ufs-mediatek.c misinterprets the regulator_get return value (expects it to be NULL in the error case, whereas it is actually an error pointer)."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-476"}]}]},"references":{"reference_data":[{"name":"https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.16.3","refsource":"MISC","tags":["Mailing List","Patch","Release Notes"],"url":"https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.16.3"},{"name":"https://github.com/torvalds/linux/commit/3ba880a12df5aa4488c18281701b5b1bc3d4531a","refsource":"MISC","tags":["Patch"],"url":"https://github.com/torvalds/linux/commit/3ba880a12df5aa4488c18281701b5b1bc3d4531a"}]}},"impact":{"baseMetricV3":{"cvssV3":{"attackComplexity":"LOW","attackVector":"LOCAL","availabilityImpact":"HIGH","baseScore":5.5,"baseSeverity":"MEDIUM","confidentialityImpact":"NONE","integrityImpact":"NONE","privilegesRequired":"LOW","scope":"UNCHANGED","userInteraction":"NONE","vectorString":"CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H","version":"3.1"},"exploitabilityScore":1.8,"impactScore":3.6}},"lastModifiedDate":"2023-03-13T14:28Z","publishedDate":"2023-03-01T20:15Z"},{"configurations":{"CVE_data_version":"4.0","nodes":[{"children":[],"cpe_match":[{"cpe23Uri":"cpe:2.3:a:eskom:e-belediye:*:*:*:*:*:*:*:*","cpe_name":[],"versionEndExcluding":"1.0.0.100","versionStartIncluding":"1.0.0.95","vulnerable":true}],"operator":"OR"}]},"cve":{"CVE_data_meta":{"ASSIGNER":"cve@usom.gov.tr","ID":"CVE-2023-1114"},"data_format":"MITRE","data_type":"CVE","data_version":"4.0","description":{"description_data":[{"lang":"en","value":"Improper Input Validation, Missing Authorization vulnerability in Eskom Bilgisayar e-Belediye allows Information Elicitation.This issue affects e-Belediye: from 1.0.0.95 before 1.0.0.100."}]},"problemtype":{"problemtype_data":[{"description":[{"lang":"en","value":"CWE-862"}]}]},"references":{"reference_data":[{"name":"https://www.usom.gov.tr/bildirim/tr-23-0113-2","refsource":"MISC","tags":["Third Party Advisory","US Government Resource"],"url":"https://www.usom.gov.tr/bildirim/tr-23-0113-2"}]}},"impact":{"baseMetricV3":{"cvssV3":{"attackComplexity":"LOW","attackVector":"NETWORK","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL","confidentialityImpact":"HIGH","integrityImpact":"HIGH","privilegesRequired":"NONE","scope":"UNCHANGED","userInteraction":"NONE","vectorString":"CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H","version":"3.1"},"exploitabilityScore":3.9,"impactScore":5.9}},"lastModifiedDate":"2023-03-13T14:17Z","publishedDate":"2023-03-01T13:15Z"}],"CVE_data_format":"MITRE","CVE_data_timestamp":"2023-03-13T15:05Z","CVE_data_type":"CVE","CVE_data_version":"4.0"},"resultsPerPage":20,"startIndex":0,"totalResults":197234}
+{
+    "resultsPerPage": 20,
+    "startIndex": 0,
+    "totalResults": 197239,
+    "result": {
+        "CVE_data_type": "CVE",
+        "CVE_data_format": "MITRE",
+        "CVE_data_version": "4.0",
+        "CVE_data_timestamp": "2023-03-13T15:21Z",
+        "CVE_Items": [
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2021-36393",
+                        "ASSIGNER": "patrick@puiterwijk.org"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-89"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://moodle.org/mod/forum/discuss.php?d=424798",
+                                "name": "https://moodle.org/mod/forum/discuss.php?d=424798",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch",
+                                    "Vendor Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "In Moodle, an SQL injection risk was identified in the library fetching a user's recent courses."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+                                    "versionStartIncluding": "3.11.0",
+                                    "versionEndExcluding": "3.11.1",
+                                    "cpe_name": []
+                                },
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+                                    "versionStartIncluding": "3.10.0",
+                                    "versionEndExcluding": "3.10.5",
+                                    "cpe_name": []
+                                },
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "3.9.8",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "HIGH",
+                            "availabilityImpact": "HIGH",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 5.9
+                    }
+                },
+                "publishedDate": "2023-03-06T21:15Z",
+                "lastModifiedDate": "2023-03-13T15:20Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2021-36392",
+                        "ASSIGNER": "patrick@puiterwijk.org"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-89"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://moodle.org/mod/forum/discuss.php?d=424797",
+                                "name": "https://moodle.org/mod/forum/discuss.php?d=424797",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch",
+                                    "Vendor Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "In Moodle, an SQL injection risk was identified in the library fetching a user's enrolled courses."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+                                    "versionStartIncluding": "3.11.0",
+                                    "versionEndExcluding": "3.11.1",
+                                    "cpe_name": []
+                                },
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+                                    "versionStartIncluding": "3.10.0",
+                                    "versionEndExcluding": "3.10.5",
+                                    "cpe_name": []
+                                },
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "3.9.8",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "HIGH",
+                            "availabilityImpact": "HIGH",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 5.9
+                    }
+                },
+                "publishedDate": "2023-03-06T21:15Z",
+                "lastModifiedDate": "2023-03-13T15:19Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2015-10095",
+                        "ASSIGNER": "cna@vuldb.com"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://github.com/wp-plugins/woo-popup/releases/tag/1.3.0",
+                                "name": "https://github.com/wp-plugins/woo-popup/releases/tag/1.3.0",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Release Notes"
+                                ]
+                            },
+                            {
+                                "url": "https://vuldb.com/?ctiid.222327",
+                                "name": "https://vuldb.com/?ctiid.222327",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Permissions Required",
+                                    "Third Party Advisory",
+                                    "VDB Entry"
+                                ]
+                            },
+                            {
+                                "url": "https://vuldb.com/?id.222327",
+                                "name": "https://vuldb.com/?id.222327",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Third Party Advisory",
+                                    "VDB Entry"
+                                ]
+                            },
+                            {
+                                "url": "https://github.com/wp-plugins/woo-popup/commit/7c76ac78f3e16015991b612ff4fa616af4ce9292",
+                                "name": "https://github.com/wp-plugins/woo-popup/commit/7c76ac78f3e16015991b612ff4fa616af4ce9292",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "A vulnerability classified as problematic has been found in woo-popup Plugin up to 1.2.2. This affects an unknown part of the file admin/class-woo-popup-admin.php. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. Upgrading to version 1.3.0 is able to address this issue. The name of the patch is 7c76ac78f3e16015991b612ff4fa616af4ce9292. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-222327."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:woo-popup_project:woo-popup:*:*:*:*:*:wordpress:*:*",
+                                    "versionEndExcluding": "1.3.0",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 6.1,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.8,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-06T21:15Z",
+                "lastModifiedDate": "2023-03-13T15:18Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1237",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://huntr.dev/bounties/cc2aa618-05da-495d-a5cd-51c40557d481",
+                                "name": "https://huntr.dev/bounties/cc2aa618-05da-495d-a5cd-51c40557d481",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            },
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/0566894a2c0e13cf07d877f41467e2e21529fee8",
+                                "name": "https://github.com/answerdev/answer/commit/0566894a2c0e13cf07d877f41467e2e21529fee8",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:16Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1238",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://huntr.dev/bounties/52f97267-1439-4bb6-862b-89b8fafce50d",
+                                "name": "https://huntr.dev/bounties/52f97267-1439-4bb6-862b-89b8fafce50d",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            },
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/0566894a2c0e13cf07d877f41467e2e21529fee8",
+                                "name": "https://github.com/answerdev/answer/commit/0566894a2c0e13cf07d877f41467e2e21529fee8",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:16Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1239",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/9870ed87fb24ed468aaf1e169c2d028e0f375106",
+                                "name": "https://github.com/answerdev/answer/commit/9870ed87fb24ed468aaf1e169c2d028e0f375106",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            },
+                            {
+                                "url": "https://huntr.dev/bounties/3a22c609-d2d8-4613-815d-58f5990b8bd8",
+                                "name": "https://huntr.dev/bounties/3a22c609-d2d8-4613-815d-58f5990b8bd8",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Reflected in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "HIGH",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 4.8,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 1.7,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:15Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-27093",
+                        "ASSIGNER": "cve@mitre.org"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": []
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://gitee.com/zhenfeng13/My-Blog/issues/I6GDTU",
+                                "name": "https://gitee.com/zhenfeng13/My-Blog/issues/I6GDTU",
+                                "refsource": "MISC",
+                                "tags": []
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross Site Scripting vulnerability found in My-Blog allows attackers to cause a denial of service via the Post function."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": []
+                },
+                "impact": {},
+                "publishedDate": "2023-03-13T15:15Z",
+                "lastModifiedDate": "2023-03-13T15:15Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-26076",
+                        "ASSIGNER": "cve@mitre.org"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": []
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://semiconductor.samsung.com/support/quality-support/product-security-updates/",
+                                "name": "https://semiconductor.samsung.com/support/quality-support/product-security-updates/",
+                                "refsource": "MISC",
+                                "tags": []
+                            },
+                            {
+                                "url": "https://semiconductor.samsung.com/processor/modem/",
+                                "name": "https://semiconductor.samsung.com/processor/modem/",
+                                "refsource": "MISC",
+                                "tags": []
+                            },
+                            {
+                                "url": "https://semiconductor.samsung.com/processor/mobile-processor/",
+                                "name": "https://semiconductor.samsung.com/processor/mobile-processor/",
+                                "refsource": "MISC",
+                                "tags": []
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "An issue was discovered in Samsung Mobile Chipset and Baseband Modem Chipset for Exynos 1280, Exynos 2200, Exynos Modem 5123, Exynos Modem 5300, and Exynos Auto T5123. An intra-object overflow in the 5G SM message codec can occur due to insufficient parameter validation when decoding reserved options."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": []
+                },
+                "impact": {},
+                "publishedDate": "2023-03-13T15:15Z",
+                "lastModifiedDate": "2023-03-13T15:15Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-25973",
+                        "ASSIGNER": "audit@patchstack.com"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-352"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://patchstack.com/database/vulnerability/wp-auto-affiliate-links/wordpress-auto-affiliate-links-plugin-6-3-0-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+                                "name": "https://patchstack.com/database/vulnerability/wp-auto-affiliate-links/wordpress-auto-affiliate-links-plugin-6-3-0-2-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+                                "refsource": "MISC",
+                                "tags": []
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-Site Request Forgery (CSRF) vulnerability in Lucian Apostol Auto Affiliate Links plugin <= 6.3.0.2 versions."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": []
+                },
+                "impact": {},
+                "publishedDate": "2023-03-13T15:15Z",
+                "lastModifiedDate": "2023-03-13T15:15Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-23711",
+                        "ASSIGNER": "audit@patchstack.com"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-352"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://patchstack.com/database/vulnerability/a2-optimized-wp/wordpress-a2-optimized-wp-plugin-3-0-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+                                "name": "https://patchstack.com/database/vulnerability/a2-optimized-wp/wordpress-a2-optimized-wp-plugin-3-0-4-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+                                "refsource": "MISC",
+                                "tags": []
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-Site Request Forgery (CSRF) vulnerability in A2 Hosting A2 Optimized WP plugin <= 3.0.4 versions."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": []
+                },
+                "impact": {},
+                "publishedDate": "2023-03-13T15:15Z",
+                "lastModifiedDate": "2023-03-13T15:15Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-22700",
+                        "ASSIGNER": "audit@patchstack.com"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-352"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://patchstack.com/database/vulnerability/pixelyoursite/wordpress-pixelyoursite-your-smart-pixel-tag-manager-plugin-9-3-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+                                "name": "https://patchstack.com/database/vulnerability/pixelyoursite/wordpress-pixelyoursite-your-smart-pixel-tag-manager-plugin-9-3-0-cross-site-request-forgery-csrf-vulnerability?_s_id=cve",
+                                "refsource": "MISC",
+                                "tags": []
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-Site Request Forgery (CSRF) vulnerability in PixelYourSite PixelYourSite \u2013 Your smart PIXEL (TAG) Manager plugin <= 9.3.0 versions."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": []
+                },
+                "impact": {},
+                "publishedDate": "2023-03-13T15:15Z",
+                "lastModifiedDate": "2023-03-13T15:15Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1240",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://huntr.dev/bounties/a24f57a4-22e3-4a17-8227-6a410a11498a",
+                                "name": "https://huntr.dev/bounties/a24f57a4-22e3-4a17-8227-6a410a11498a",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            },
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/90bfa0dcc7b49482f1d1e31aee3ab073f3c13dd9",
+                                "name": "https://github.com/answerdev/answer/commit/90bfa0dcc7b49482f1d1e31aee3ab073f3c13dd9",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:14Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1241",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://huntr.dev/bounties/e0e9b1bb-3025-4b9f-acb4-16a5da28aa3c",
+                                "name": "https://huntr.dev/bounties/e0e9b1bb-3025-4b9f-acb4-16a5da28aa3c",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            },
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/90bfa0dcc7b49482f1d1e31aee3ab073f3c13dd9",
+                                "name": "https://github.com/answerdev/answer/commit/90bfa0dcc7b49482f1d1e31aee3ab073f3c13dd9",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:14Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1064",
+                        "ASSIGNER": "cve@usom.gov.tr"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-89"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://www.usom.gov.tr/bildirim/tr-23-0115",
+                                "name": "https://www.usom.gov.tr/bildirim/tr-23-0115",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Third Party Advisory",
+                                    "US Government Resource"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Uzay Baskul Weighbridge Automation Software allows SQL Injection.This issue affects Weighbridge Automation Software: before 1.1."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:uzaybaskul:weighbridge_automation_software:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.1",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "NONE",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "HIGH",
+                            "integrityImpact": "HIGH",
+                            "availabilityImpact": "HIGH",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL"
+                        },
+                        "exploitabilityScore": 3.9,
+                        "impactScore": 5.9
+                    }
+                },
+                "publishedDate": "2023-03-01T13:15Z",
+                "lastModifiedDate": "2023-03-13T15:14Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1242",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/90bfa0dcc7b49482f1d1e31aee3ab073f3c13dd9",
+                                "name": "https://github.com/answerdev/answer/commit/90bfa0dcc7b49482f1d1e31aee3ab073f3c13dd9",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            },
+                            {
+                                "url": "https://huntr.dev/bounties/71c24c5e-ceb2-45cf-bda7-fa195d37e289",
+                                "name": "https://huntr.dev/bounties/71c24c5e-ceb2-45cf-bda7-fa195d37e289",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:14Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1243",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/9870ed87fb24ed468aaf1e169c2d028e0f375106",
+                                "name": "https://github.com/answerdev/answer/commit/9870ed87fb24ed468aaf1e169c2d028e0f375106",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            },
+                            {
+                                "url": "https://huntr.dev/bounties/1d62d35a-b096-4b76-a021-347c3f1c570c",
+                                "name": "https://huntr.dev/bounties/1d62d35a-b096-4b76-a021-347c3f1c570c",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "HIGH",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 4.8,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 1.7,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:14Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1244",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/9870ed87fb24ed468aaf1e169c2d028e0f375106",
+                                "name": "https://github.com/answerdev/answer/commit/9870ed87fb24ed468aaf1e169c2d028e0f375106",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            },
+                            {
+                                "url": "https://huntr.dev/bounties/bcab9555-8a35-42b2-a7de-0a79fd710b52",
+                                "name": "https://huntr.dev/bounties/bcab9555-8a35-42b2-a7de-0a79fd710b52",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:13Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-1245",
+                        "ASSIGNER": "security@huntr.dev"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-79"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://huntr.dev/bounties/f8011bb3-8212-4937-aa58-79f4b73be004",
+                                "name": "https://huntr.dev/bounties/f8011bb3-8212-4937-aa58-79f4b73be004",
+                                "refsource": "CONFIRM",
+                                "tags": [
+                                    "Exploit",
+                                    "Patch",
+                                    "Third Party Advisory"
+                                ]
+                            },
+                            {
+                                "url": "https://github.com/answerdev/answer/commit/71a4cdac81112975969129d308899edd155c0e80",
+                                "name": "https://github.com/answerdev/answer/commit/71a4cdac81112975969129d308899edd155c0e80",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Patch"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Cross-site Scripting (XSS) - Stored in GitHub repository answerdev/answer prior to 1.0.6."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:a:answer:answer:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "1.0.6",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "REQUIRED",
+                            "scope": "CHANGED",
+                            "confidentialityImpact": "LOW",
+                            "integrityImpact": "LOW",
+                            "availabilityImpact": "NONE",
+                            "baseScore": 5.4,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 2.3,
+                        "impactScore": 2.7
+                    }
+                },
+                "publishedDate": "2023-03-07T08:15Z",
+                "lastModifiedDate": "2023-03-13T15:13Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2022-29493",
+                        "ASSIGNER": "secure@intel.com"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-755"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "http://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00737.html",
+                                "name": "http://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00737.html",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Vendor Advisory"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "Uncaught exception in webserver for the Integrated BMC in some Intel(R) platforms before versions 2.86, 2.09 and 2.78 may allow a privileged user to potentially enable denial of service via network access."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "AND",
+                            "children": [
+                                {
+                                    "operator": "OR",
+                                    "children": [],
+                                    "cpe_match": [
+                                        {
+                                            "vulnerable": true,
+                                            "cpe23Uri": "cpe:2.3:o:intel:baseboard_management_controller_firmware:*:*:*:*:*:*:*:*",
+                                            "versionEndExcluding": "2.86",
+                                            "cpe_name": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "operator": "OR",
+                                    "children": [],
+                                    "cpe_match": [
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c621:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c622:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c624:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c625:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c626:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c627:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c628:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c629:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_bronze_3104:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_bronze_3106:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_bronze_3204:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_bronze_3206r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5115:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5118:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5119t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5120:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5120t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5122:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5215:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5215l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5217:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5218:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5218b:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5218n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5218r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5218t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5220:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5220r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5220s:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5220t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5222:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6126:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6126f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6126t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6128:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6130:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6130f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6130t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6132:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6134:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6136:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6138:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6138f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6138p:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6138t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6140:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6142:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6142f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6144:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6146:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6148:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6148f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6150:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6152:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6154:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6208u:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6209u:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6210u:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6212u:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6222v:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6226:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6226r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6230:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6230n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6230r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6230t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6234:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6238:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6238l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6238r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6238t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6240:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6240l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6240r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6240y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6242:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6242r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6244:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6246:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6246r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6248:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6248r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6250:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6250l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6252:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6252n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6254:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6256:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6258r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6262v:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8153:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8156:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8158:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8160:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8160f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8160t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8164:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8168:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8170:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8176:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8176f:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8180:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8253:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8256:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8260:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8260l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8260y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8268:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8270:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8276:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8276l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8280:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8280l:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_9221:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_9222:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_9242:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_9282:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4108:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4109t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4110:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4112:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4114:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4114t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4116:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4116t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4208:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4209t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4210:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4210r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4210t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4214:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4214r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4214y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4215:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4215r:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4216:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3175x:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3223:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3225:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3235:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3245:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3245m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3265:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3265m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3275:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_w-3275m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        }
+                                    ]
+                                }
+                            ],
+                            "cpe_match": []
+                        },
+                        {
+                            "operator": "AND",
+                            "children": [
+                                {
+                                    "operator": "OR",
+                                    "children": [],
+                                    "cpe_match": [
+                                        {
+                                            "vulnerable": true,
+                                            "cpe23Uri": "cpe:2.3:o:intel:baseboard_management_controller_firmware:*:*:*:*:*:*:*:*",
+                                            "versionEndExcluding": "2.09",
+                                            "cpe_name": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "operator": "OR",
+                                    "children": [],
+                                    "cpe_match": [
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c252:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c256:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2124:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2124g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2126g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2134:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2136:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2144g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2146g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2174g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2176g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2176m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2186g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2186m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2224:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2224g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2226g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2226ge:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2234:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2236:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2244g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2246g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2254me:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2254ml:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2274g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2276g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2276m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2276me:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2276ml:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2278g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2278ge:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2278gel:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2286g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2286m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2288g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2314:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2324g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2334:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2336:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2356g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2374g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2378:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2378g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2386g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_e-2388g:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        }
+                                    ]
+                                }
+                            ],
+                            "cpe_match": []
+                        },
+                        {
+                            "operator": "AND",
+                            "children": [
+                                {
+                                    "operator": "OR",
+                                    "children": [],
+                                    "cpe_match": [
+                                        {
+                                            "vulnerable": true,
+                                            "cpe23Uri": "cpe:2.3:o:intel:baseboard_management_controller_firmware:*:*:*:*:*:*:*:*",
+                                            "versionEndExcluding": "2.81",
+                                            "cpe_name": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "operator": "OR",
+                                    "children": [],
+                                    "cpe_match": [
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c621a:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c627a:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:c629a:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5315y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5317:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5318h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5318n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5318s:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5318y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5320:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5320h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_5320t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6312u:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6314u:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6326:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6328h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6328hl:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6330:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6330h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6330n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6334:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6336y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6338:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6338n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6338t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6342:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6346:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6348:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6348h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_gold_6354:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8351n:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8352m:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8352s:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8352v:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8352y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8353h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8354h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8356h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8358:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8358p:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8360h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8360hl:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8360y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8362:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8368:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8368q:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8376h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8376hl:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8380:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8380h:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_platinum_8380hl:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4309y:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4310:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4310t:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4314:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        },
+                                        {
+                                            "vulnerable": false,
+                                            "cpe23Uri": "cpe:2.3:h:intel:xeon_silver_4316:-:*:*:*:*:*:*:*",
+                                            "cpe_name": []
+                                        }
+                                    ]
+                                }
+                            ],
+                            "cpe_match": []
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+                            "attackVector": "NETWORK",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "HIGH",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "NONE",
+                            "integrityImpact": "NONE",
+                            "availabilityImpact": "HIGH",
+                            "baseScore": 4.9,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 1.2,
+                        "impactScore": 3.6
+                    }
+                },
+                "publishedDate": "2023-02-16T21:15Z",
+                "lastModifiedDate": "2023-03-13T15:06Z"
+            },
+            {
+                "cve": {
+                    "data_type": "CVE",
+                    "data_format": "MITRE",
+                    "data_version": "4.0",
+                    "CVE_data_meta": {
+                        "ID": "CVE-2023-23004",
+                        "ASSIGNER": "cve@mitre.org"
+                    },
+                    "problemtype": {
+                        "problemtype_data": [
+                            {
+                                "description": [
+                                    {
+                                        "lang": "en",
+                                        "value": "CWE-476"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "references": {
+                        "reference_data": [
+                            {
+                                "url": "https://github.com/torvalds/linux/commit/15342f930ebebcfe36f2415049736a77d7d2e045",
+                                "name": "https://github.com/torvalds/linux/commit/15342f930ebebcfe36f2415049736a77d7d2e045",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Broken Link",
+                                    "Patch"
+                                ]
+                            },
+                            {
+                                "url": "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19",
+                                "name": "https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.19",
+                                "refsource": "MISC",
+                                "tags": [
+                                    "Mailing List",
+                                    "Patch",
+                                    "Release Notes"
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "description_data": [
+                            {
+                                "lang": "en",
+                                "value": "In the Linux kernel before 5.19, drivers/gpu/drm/arm/malidp_planes.c misinterprets the get_sg_table return value (expects it to be NULL in the error case, whereas it is actually an error pointer)."
+                            }
+                        ]
+                    }
+                },
+                "configurations": {
+                    "CVE_data_version": "4.0",
+                    "nodes": [
+                        {
+                            "operator": "OR",
+                            "children": [],
+                            "cpe_match": [
+                                {
+                                    "vulnerable": true,
+                                    "cpe23Uri": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
+                                    "versionEndExcluding": "5.19",
+                                    "cpe_name": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "impact": {
+                    "baseMetricV3": {
+                        "cvssV3": {
+                            "version": "3.1",
+                            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                            "attackVector": "LOCAL",
+                            "attackComplexity": "LOW",
+                            "privilegesRequired": "LOW",
+                            "userInteraction": "NONE",
+                            "scope": "UNCHANGED",
+                            "confidentialityImpact": "NONE",
+                            "integrityImpact": "NONE",
+                            "availabilityImpact": "HIGH",
+                            "baseScore": 5.5,
+                            "baseSeverity": "MEDIUM"
+                        },
+                        "exploitabilityScore": 1.8,
+                        "impactScore": 3.6
+                    }
+                },
+                "publishedDate": "2023-03-01T20:15Z",
+                "lastModifiedDate": "2023-03-13T15:05Z"
+            }
+        ]
+    }
+}

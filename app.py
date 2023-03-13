@@ -16,7 +16,7 @@ def get_vulns():
     
     # Save the vulnerability data to a file
     with open('vulns.json', 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4)
     
     return jsonify(data)
 
