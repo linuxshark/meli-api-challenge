@@ -69,5 +69,23 @@ def sum_vulns():
     response.headers['Content-Disposition'] = 'inline; filename=summary.json'
     return response
 
+@app.route('/fix_vulns', methods=['POST'])
+def fix_vulns():
+    # Get the ID of the vulnerability to fix from the request body
+    vuln_id = request.json['ID']
+    # Load the summary data from the to_fix.json file
+    with open('to_fix.json', 'r') as f:
+        summary = json.load(f)
+    # Find the vulnerability with the matching ID and update the Fix and Status fields
+    for vuln in summary['Vulnerability Info']:
+        if vuln['ID'] == vuln_id:
+            vuln['Fix'] = 'DONE'
+            vuln['Status'] = 'FIXED'
+    # Save the updated summary data back to the to_fix.json file
+    with open('to_fix.json', 'w') as f:
+        json.dump(summary, f, indent=4)
+    # Return a success response
+    return jsonify({'message': 'Vulnerability fixed successfully'})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
