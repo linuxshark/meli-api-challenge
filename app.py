@@ -1,7 +1,7 @@
 import json
 import os
 import requests
-from flask import Flask, jsonify, make_response
+from flask import Flask, jsonify, make_response, request
 
 app = Flask(__name__)
 
@@ -66,6 +66,49 @@ def sum_vulns():
     response.headers['Content-Type'] = 'application/json'
     response.headers['Content-Disposition'] = 'inline; filename=summary.json'
     return response
+
+@app.route('/fix_vulns', methods=['POST'])
+def fix_vulns():
+    try:
+        req_data = request.get_json()
+
+        if not req_data:
+            return jsonify({'message': 'No data found in request'}), 400
+
+        if 'vulnerability' not in req_data:
+            return jsonify({'message': 'Vulnerability not found in request'}), 400
+
+        vulnerability = req_data['vulnerability']
+
+        if not vulnerability:
+            return jsonify({'message': 'No vulnerability found in request'}), 400
+
+        with open('to_fix.json', 'r') as file:
+            data = json.load(file)
+
+        for idx, value in enumerate(data['Vulnerability Info']):
+            if value['ID'] == vulnerability:
+                del data['Vulnerability Info'][idx]
+                counts = {
+                    'CRITICAL': 0,
+                    'HIGH': 0,
+                    'MEDIUM': 0,
+                    'LOW': 0
+                }
+                for vuln in data['Vulnerability Info']:
+                    counts[vuln['Severity']] += 1
+                summary = {
+                    'Counts by Severity': counts,
+                    'Vulnerability Info': data['Vulnerability Info']
+                }
+                with open('to_fix.json', 'w') as f:
+                    json.dump(summary, f, indent=4)
+                return jsonify({'message': f'Vulnerability {vulnerability} removed successfully'}), 200
+
+        return jsonify({'message': f'Vulnerability {vulnerability} not found in list'}), 404
+
+    except Exception as e:
+        return jsonify({'message': 'An error occurred', 'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

@@ -1,7 +1,7 @@
 import json
 import os
 import requests
-from flask import Flask, jsonify
+from flask import Flask, jsonify, make_response, request
 
 app = Flask(__name__)
 
@@ -45,7 +45,9 @@ def sum_vulns():
             vuln_info = {
                 'ID': vulnerability['cve']['CVE_data_meta']['ID'],
                 'Description': vulnerability['cve']['description']['description_data'][0]['value'],
-                'Severity': base_severity
+                'Severity': base_severity,
+                'Fix': '',
+                'Status': ''
             }
             vulns_list.append(vuln_info)
         except KeyError:
