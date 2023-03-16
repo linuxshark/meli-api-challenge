@@ -87,5 +87,39 @@ def fix_vulns():
     # Return a success response
     return jsonify({'message': 'Vulnerability fixed successfully'})
 
+@app.route('/total_vulns', methods=['GET'])
+def total_vulns():
+    # Check if to_fix.json exists, if not, call sum_vulns() to create it
+    if not os.path.isfile('to_fix.json'):
+        sum_vulns()
+
+    with open('to_fix.json') as f:
+        data = json.load(f)
+
+    # Dictionary to store vulnerability counts by severity
+    counts = {
+        'CRITICAL': 0,
+        'HIGH': 0,
+        'MEDIUM': 0,
+        'LOW': 0
+    }
+
+    # Loop through each vulnerability and count by severity
+    for vulnerability in data['Vulnerability Info']:
+        if vulnerability['Status'] != 'FIXED':
+            counts[vulnerability['Severity']] += 1
+
+    # Create final summary dictionary to return
+    summary = {
+        'Counts by Severity (excluding FIXED)': counts,
+        'Total Count (excluding FIXED)': sum(counts.values())
+    }
+
+    # Return a readable and summarized response
+    response = make_response(jsonify(summary), 200)
+    response.headers['Content-Type'] = 'application/json'
+    response.headers['Content-Disposition'] = 'inline; filename=total_vulns.json'
+    return response
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
