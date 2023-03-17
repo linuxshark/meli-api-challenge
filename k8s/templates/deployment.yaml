@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.serviceNameFront }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.serviceNameFront }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  minReadySeconds: {{ .Values.minReadySeconds }}  
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.serviceNameFront }}
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
+      containers:
+      - name: {{ .Values.serviceNameFront }}
+        image: {{ .Values.imagename }}:{{ .Values.imagetag }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: {{ .Values.containerPort }}
+        env:
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.serviceNameFront }}.secret.{{ .Values.environmentName }}
+                  key: db_name
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.serviceNameFront }}.secret.{{ .Values.environmentName }}
+                  key: db_user
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.serviceNameFront }}.secret.{{ .Values.environmentName }}
+                  key: db_password
+        resources:
+          requests:
+            cpu: {{ .Values.requestsCpu }}
+            memory: {{ .Values.requestsMemory }}
+          limits:
+            cpu: {{ .Values.limitsCpu }}
+            memory: {{ .Values.limitsMemory }}
+        securityContext:
+          allowPrivilegeEscalation: false

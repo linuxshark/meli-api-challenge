@@ -16,7 +16,7 @@ This is a simple Flask application that fetches the latest vulnerability data fr
 
 2.- All the connection database credentials must be storaged inside a secret tools like GCP Secret Manager or Hashicorp Vault.
 
-3.- The API must be running inside a Cloud Computing infrastructure, as a K8S, functions, Container as a Service or something else.
+3.- The API must be running inside a Cloud Computing infrastructure, as a K8S, functions, Container as a Service or something else. You can see a example of deployment inside Kubernetes engine in the folder `/k8s`
 
 4.- All the infrastructure must be implemented with IaC (Terraform), and needs to be constantly scanned with BridgeCrew, Checkov, or something else.
 
