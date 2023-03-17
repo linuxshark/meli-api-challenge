@@ -1,6 +1,6 @@
-## Vulnerability Management API
+## **Vulnerability Management API**
 
-This is a simple Flask application that fetches the latest vulnerability data from NVD (National Vulnerability Database) and allows users to view, fix and track vulnerabilities. The application has the following API endpoints:
+This is a simple Flask application that fetches the latest vulnerability data from NVD (*National Vulnerability Database*) and allows users to view, fix and track vulnerabilities. The application has the following API endpoints:
 
 - `/health_check`: A simple health check endpoint that returns a message confirming that the application is up and running.
 - `/get_vulns`: An endpoint that fetches the latest vulnerability data from NVD and saves it to a file named `vulns.json`. It also returns the data in JSON format.
@@ -8,9 +8,11 @@ This is a simple Flask application that fetches the latest vulnerability data fr
 - `/fix_vulns`: An endpoint that allows users to mark a vulnerability as fixed by specifying the vulnerability ID in the request body. It loads the summary data from `to_fix.json`, updates the status of the specified vulnerability to 'FIXED' and saves the updated summary back to `to_fix.json`.
 - `/total_vulns`: An endpoint that summarizes the vulnerability data from `to_fix.json` by counting the number of vulnerabilities by severity, excluding those that have been fixed, and returns the summary in JSON format.
 
-## SECURITY AND INFRASTRUCTURE IMPORTANT STUFF
+## **SECURITY AND INFRASTRUCTURE IMPORTANT STUFF**
 
-**This is not a production code, i'm using json files just to simulate the real data and status persistance, a real security solution as this one, should contains a lot of considerations like:**
+**This is not a production code, i'm using json files just to simulate the real data and status persistance, a real security solution as this one, should contains a lot of security and infrastructure considerations like shown in the proposal diagram as next:**
+
+![](/img/meli-api-infra.png)
 
 1.- Own Database to store the data obtained from the NVD endpoint.
 

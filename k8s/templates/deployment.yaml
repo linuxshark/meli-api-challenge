@@ -43,6 +43,11 @@ spec:
                 secretKeyRef:
                   name: {{ .Values.serviceNameFront }}.secret.{{ .Values.environmentName }}
                   key: db_password
+            - name: DB_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.serviceNameFront }}.secret.{{ .Values.environmentName }}
+                  key: db_url
         resources:
           requests:
             cpu: {{ .Values.requestsCpu }}
